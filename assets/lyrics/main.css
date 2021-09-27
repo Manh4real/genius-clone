@@ -1,0 +1,235 @@
+#main {
+  --dark-color: #111;
+  --light-grey: #9a9a9a;
+}
+
+#main > .main-content {
+  padding: 10px 0;
+  display: flex;
+  color: var(--dark-color);
+  background-color: #fff;
+}
+#main .left {
+  flex: 0.6;
+  font-size: 1.125em;
+  line-height: 1.7em;
+  padding: 0 1rem;
+  /* background: rgba(238, 238, 238, 0.637); */
+}
+#main .right {
+  flex: 0.4;
+  max-width: 40%;
+  padding-right: 1rem;
+  position: relative;
+  font-size: 1rem;
+  /* overflow: hidden; */
+}
+#main .left .lyrics {
+  word-wrap: break-word;
+  word-break: break-word;
+}
+#main .left .lyrics .decipher-lyrics {
+  background-color: #ddd;
+  color: #000;
+  box-shadow: 0.01em 0 0 #ddd, -0.01em 0 0 #ddd;
+  transition: background-color 0.1s;
+}
+#main .left .lyrics .decipher-lyrics:hover {
+  background-color: #ffff64;
+  box-shadow: 0.01em 0 0 #ffff64, -0.01em 0 0 #ffff64;
+  cursor: pointer;
+}
+
+#main .left .lyrics .sng-nme_lrcs {
+  color: var(--light-grey);
+  font-size: 0.75rem;
+  user-select: none;
+}
+#main .left .social-links {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  height: 32.5px;
+  margin: 2rem 0;
+}
+#main .left .social-links .sc {
+  display: inline-flex;
+  width: 32.5px;
+  /* height: 100%; */
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: #7d8fe8;
+  margin-right: 5px;
+}
+#main .left .social-links svg {
+  height: 22px;
+  fill: #fff;
+}
+#main .left .btn-w-lightnin,
+#main .left .embed {
+  padding: 0 5px;
+  /* height: 100%; */
+  border: 2px solid var(--dark-color);
+  font-weight: bold;
+  color: #000;
+  font-size: 14px;
+  margin-right: 5px;
+}
+#main .left .btn-w-lightnin svg {
+  fill: var(--dark-color);
+  vertical-align: middle;
+  width: 18px;
+}
+
+#main .left .more-sctn > h3 {
+  text-transform: uppercase;
+  color: var(--light-grey);
+  font-size: 0.875rem;
+  padding: 1rem 0;
+}
+#main .left .more-sctn .image {
+  width: 100%;
+  min-height: 3.6rem;
+  max-width: 6.4rem;
+  background-size: cover;
+  background-position: center;
+}
+#main .left .more-sctn .artcl {
+  display: flex;
+  margin-bottom: 1rem;
+}
+#main .left .more-sctn .artcl .image {
+  margin-right: 1rem;
+}
+#main .left .more-sctn .artcl .title {
+  font-size: 1rem;
+  color: #222;
+  padding-right: 1rem;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+#main .right .leaderboard {
+  display: none;
+}
+#main .right > .right-ctn .about > div > .title.active + .leaderboard {
+  display: block;
+  /* overflow: hidden; */
+}
+#main .right > .right-ctn .container {
+  width: 100%;
+  height: 200px;
+  background: #eee;
+  margin-bottom: 1rem;
+}
+#main .right > .right-ctn .about {
+  margin: 1rem 0;
+}
+#main .right > .right-ctn .about > div > .title {
+  display: inline-block;
+  font-size: 0.875em;
+  font-weight: bold;
+  user-select: none;
+  cursor: pointer;
+}
+#main .right .rd-mr {
+  /* display: inline-block; */
+  cursor: pointer;
+}
+#main .right > .right-ctn .about .para {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+#main .right .track-info {
+  margin-bottom: 3rem;
+}
+#main .right .track-info > .title {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+#main .right .track-info td {
+  padding: 10px 10px 10px 0;
+  color: var(--light-grey);
+  font-weight: bold;
+  /* font-size: 1rem; */
+  border-top: 1px solid #e9e9e9;
+  text-transform: capitalize;
+}
+#main .right .msc-vd-ctnr {
+  padding: 0.75rem;
+  background-color: #fff;
+  border: 0.15rem solid #f7f7f7;
+}
+#main .right .msc-vd-ctnr h4 {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  padding-bottom: 0.5rem;
+}
+
+#main .right .alb-lst-cntr .list {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#main .right .alb-lst .title {
+  display: flex;
+  margin: 1rem 0;
+}
+#main .right .alb-lst .title .image {
+  display: inline-block;
+  min-width: 64px;
+  width: 64px;
+  height: 64px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 1.25rem;
+}
+#main .right .alb-lst .title a {
+  display: block;
+  font-weight: bold;
+  color: #000;
+  font-size: 1.313em;
+}
+#main .right .alb-lst .title .artist {
+  font-size: 1rem;
+}
+#main .right .alb-lst a:hover {
+  color: #666;
+}
+/* #main .right .alb-lst-cntr .list .song {
+  max-width: 50%;
+} */
+#main .right .alb-lst-cntr .list .song:hover {
+  color: #666;
+}
+#main .right .alb-lst-cntr .list .song .text {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#main .right .alb-lst-cntr .list .song.displayed,
+#main .yr {
+  color: var(--light-grey);
+}
+#main .right .alb-lst-cntr .order-list {
+  color: #000;
+  margin-left: 1rem;
+  columns: 2;
+}
+#main .right .alb-lst-cntr .order-list li {
+  /* word-wrap: break-word;
+  word-break: break-word; */
+  line-height: 1.65;
+  padding: 5px 0;
+  margin-right: 15px;
+}

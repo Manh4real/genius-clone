@@ -1,0 +1,77 @@
+.footer {
+  background-color: #121212;
+}
+.footer * {
+  color: #fff;
+}
+
+.footer .container {
+  padding: 4.5rem 60px 2.25rem;
+  display: grid;
+  -webkit-box-pack: center;
+  justify-content: center;
+  grid-template-columns:
+    [grid-start] repeat(3, minmax(14px, 44px)) [center-start] repeat(
+      6,
+      minmax(14px, 44px)
+    )
+    [center-end] repeat(3, minmax(14px, 44px)) [grid-end];
+  gap: 40px 60px;
+}
+
+.footer .big {
+  grid-column: span 6;
+  line-height: 1.2;
+}
+.footer .big .title {
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+}
+.footer .links {
+  grid-column: span 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer .links > div {
+  width: 250px;
+  padding-bottom: 2rem;
+}
+.footer .links p,
+.footer .term {
+  color: #9a9a9a;
+  font-size: 12px;
+}
+.footer .links a:not(.footer .term) {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 17px;
+  text-transform: capitalize;
+  line-height: 1.3;
+}
+.footer .social-links {
+  margin-top: 1.5rem;
+}
+.footer .social-links a {
+  display: inline-block;
+  margin-right: 1.25rem;
+}
+.footer .social-links svg {
+  height: 22px;
+  fill: #fff;
+}
+.footer .lower * {
+  font-size: 0.875rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.footer .lower {
+  padding: 2.25rem 60px;
+  display: flex;
+  justify-content: space-around;
+  border-top: 0.15rem solid #2a2a2a;
+}
+.footer .lower .abc a {
+  display: inline-block;
+  margin: 0 0.125rem;
+}

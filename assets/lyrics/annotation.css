@@ -1,0 +1,157 @@
+#main .right.overlapped .right-ctn {
+  opacity: 0;
+  visibility: hidden;
+}
+#main .left .lyrics .decipher-lyrics.annotation-displayed {
+  background-color: #ffff64;
+  user-select: none;
+}
+.annotation-container {
+  position: absolute;
+  /* top: 50%; */
+  left: 0;
+  padding-left: 1.25rem;
+  padding-right: 1rem;
+}
+.annotation-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  /* left: -1.25rem; */
+  left: 0;
+  width: 4px;
+  bottom: 0;
+  display: block;
+  background-color: #99a7ee;
+}
+.annotation-container .arrow-left-indicator {
+  position: absolute;
+  /* top: 20rem; */
+  left: 4px;
+  transform: translate(-100%, 0%);
+  animation: slide 0.5s ease-out;
+}
+.annotation-container .arrow-left-indicator::before {
+  content: "";
+  position: absolute;
+  top: 2.3px;
+  bottom: 7.5px;
+  left: 0;
+  right: -2px;
+  background: #fff;
+  z-index: 10;
+}
+@keyframes slide {
+  0% {
+    /* opacity: 0; */
+    transform: translateX(3px);
+  }
+  100% {
+    /* opacity: 1; */
+    transform: translateX(-100%);
+  }
+}
+.annotation-container .arrow-left-indicator svg {
+  height: 40px;
+  fill: #99a7ee;
+  position: relative;
+  z-index: 1000;
+}
+.annotation-container blockquote {
+  font-size: 13px;
+  /* color: #333; */
+  font-style: italic;
+  margin: 1rem 0;
+  padding-left: 1rem;
+  position: relative;
+}
+.annotation-container blockquote::before {
+  content: "\201C";
+  position: absolute;
+  top: -0.1em;
+  left: -0.3em;
+  font: bold 2.25em/1 "Times New Roman";
+  color: inherit;
+  opacity: 0.75;
+}
+.annotation-container .top {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.annotation-container .top .title {
+  font-size: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+.annotation-container .top .title .ctrbts-text {
+  text-decoration: underline;
+}
+.annotation-container .show-btn {
+  padding: 8px;
+  background: #fff;
+  border: 3px solid #111;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.annotation-container .show-btn:hover {
+  background-color: #ccc3;
+}
+
+.annotation-container .icon svg {
+  height: 15px;
+  width: 15px;
+  fill: #99a7ee;
+}
+.annotation-container .bottom {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 12px;
+}
+.annotation-container .bottom > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.annotation-container .bottom .btn {
+  cursor: pointer;
+  padding: 3px 5px;
+  border-radius: 5px;
+  margin-left: 8px;
+}
+.annotation-container .bottom .btn:hover {
+  background: #ccc3;
+}
+/* REPORT (ARROW DOWN) BUTTON */
+.annotation-container .arrow-down-btn {
+  position: relative;
+  user-select: none;
+}
+.annotation-container .arrow-down-btn .report {
+  display: none;
+}
+.annotation-container .arrow-down-btn .report:hover {
+  background: #ccc3;
+}
+.annotation-container .arrow-down-btn.active .report {
+  display: block;
+  width: max-content;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  padding: 5px 20px;
+  border: 3px solid #111;
+  font-weight: bold;
+  text-transform: capitalize;
+  background: #fff;
+  box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
+}
+.annotation-container .top .title.active + .leaderboard {
+  display: block !important;
+}

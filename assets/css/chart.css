@@ -1,0 +1,255 @@
+.chart {
+  text-align: center;
+  min-height: 100vh;
+  min-width: 925px;
+  padding: 4.5rem 60px;
+}
+.chart .small-title {
+  margin-bottom: 45px;
+  color: #ff1464;
+}
+.chart .filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.chart .filter {
+  width: 250px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  transition: width 0.3s ease-out;
+}
+.filter .title-header {
+  border: 3px solid #111;
+  padding: 0.75rem calc(2.5rem) 0.75rem 1rem;
+  position: relative;
+}
+.filter .title-header p {
+  text-align: left;
+}
+.filter .header {
+  letter-spacing: 1px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+}
+.filter .header .icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 0.875rem;
+  height: 0.875rem;
+  transform-origin: center;
+  transform: translate(190%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s linear;
+}
+.filter.expanded .header .icon {
+  transform: translate(190%, -50%) rotate(180deg);
+}
+.filter .table {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 300px;
+  transform: translateY(100%);
+  background: #fff;
+  z-index: 100;
+  overflow: hidden;
+  transition: height 0.1s linear;
+}
+.filter .table table::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #111;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.1);
+  /* background: red; */
+  z-index: -1;
+}
+.filter .table.hidden {
+  transition-delay: 0s;
+  height: 0;
+  transition-duration: 0s;
+}
+.filter .table.show {
+  transition-delay: 0.3s;
+  height: 274.3px;
+}
+.filter td.active::after {
+  /* content: url(/icon2.svg); */
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  width: 0.25rem;
+  height: 0.25rem;
+  background: #333;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.filter .table td,
+.filter .table th {
+  position: relative;
+  padding: 0.75rem calc(2.5rem) 0.75rem 1rem;
+  border: 2px solid #e9e9e9;
+  text-align: center;
+}
+.filter tbody {
+  border: 2px solid #111;
+}
+th {
+  font-weight: bold !important;
+}
+.chart .main {
+  position: relative;
+}
+.chart .main .list {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.chart .list li {
+  display: list-item;
+  max-height: 60px;
+  position: relative;
+}
+.chart .list li:hover a {
+  background: #ddd !important;
+}
+.chart .list li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.chart .list li:nth-child(even) > a {
+  background: #eee;
+}
+.chart .list li .order {
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transform: translate(-100%, -50%);
+  pointer-events: none;
+}
+.chart .list li > a {
+  display: inline-flex;
+  border: 1px solid #333;
+  width: 100%;
+  max-height: 60px;
+  user-select: none;
+}
+.chart .list li > a h2,
+.chart .list li > span {
+  line-height: 60px;
+}
+.chart .list li > a > div:first-child {
+  display: flex;
+}
+.chart .image {
+  width: 58px;
+  height: 58px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.chart .main .song {
+  width: 380px;
+  min-width: 310px;
+  text-indent: 20px;
+  font-size: 1.25rem;
+}
+.chart .icon svg {
+  width: 1rem;
+}
+.chart .hot,
+.chart .views {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 80px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.chart .hot {
+  color: #ff1464;
+}
+.chart .num {
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  margin-left: 6px;
+}
+.chart .main .artist-container {
+  position: relative;
+  overflow: hidden;
+}
+.chart .main .artist {
+  min-width: 160px;
+  width: 250px;
+  font-size: 1rem;
+  height: 60px;
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+}
+.chart .main .song::after {
+  content: "Lyrics";
+  margin-left: 10px;
+  color: #888;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.chart .main .song,
+.chart .main .artist {
+  font-weight: bold;
+  line-height: 60px !important;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+.chart .more-btn {
+  background: #111;
+  border: 2.5px solid #111;
+  color: #fff;
+  margin-top: 3rem;
+}
+.chart .more-btn:hover {
+  background: transparent;
+  color: #111;
+}
+.chart .more-btn.loading {
+  background: #fff;
+  color: #111;
+}
+/* .chart .main .artist:hover {
+  animation: animate 3s linear 0.5s infinite;
+}
+@keyframes animate {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+} */

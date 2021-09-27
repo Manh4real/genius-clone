@@ -1,0 +1,66 @@
+.latest {
+  padding: 4.5rem 60px;
+  background: #fff;
+}
+.latest .small-title {
+  color: #ff1464;
+  margin: 0.2rem 0 2rem 0;
+}
+.latest .article {
+  grid-column: span 3 / auto;
+}
+.latest .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.latest .article .image {
+  min-width: 162px;
+  width: 252px;
+  min-height: 141px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.latest .article .para {
+  font-size: 17px;
+  padding: 1rem 0 2rem 0;
+}
+
+.latest .article a > div:first-child {
+  margin-bottom: 1.2rem;
+  overflow: hidden;
+}
+.latest .article a:hover .para {
+  text-decoration: underline;
+}
+.latest .article .title {
+  position: relative;
+  display: inline;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.latest .article .title::after {
+  content: "";
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  width: 200px;
+  transform: translate(100%, -50%);
+  border-bottom: 2px solid #111;
+}
+.latest .more-btn {
+  background: #111;
+  border: 2.5px solid #111;
+  color: #fff;
+}
+.latest .more-btn:hover {
+  background: transparent;
+  color: #111;
+}
+.posted-by .date {
+  color: #9a9a9a;
+}

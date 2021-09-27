@@ -1,0 +1,84 @@
+.main .news {
+  display: grid;
+  grid-template-columns:
+    [grid-start] repeat(3, minmax(14px, 44px)) [center-start] repeat(
+      6,
+      minmax(14px, 44px)
+    )
+    [center-end] repeat(3, minmax(14px, 44px)) [grid-end];
+  gap: 40px 60px;
+  justify-content: center;
+  padding: 4.5rem 60px;
+}
+.news .big.text {
+  grid-column: span 5;
+}
+.news .big.image {
+  grid-column: span 7;
+}
+.news .big.image .image {
+  background: url(../img/image1.png);
+  background-position: center center;
+  padding-bottom: 56.25%;
+  background-color: #e9e9e9;
+  background-repeat: repeat-x;
+  background-size: auto calc(100% + 1px);
+}
+.news .normal {
+  min-height: 400px;
+  grid-column: span 3;
+  position: relative;
+}
+.news .normal > a {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.news .normal:not(:last-child):after {
+  content: "";
+  position: absolute;
+  right: calc(-30px - 0.075rem);
+  top: 0.175rem;
+  height: calc(100% - 0.175rem);
+  border-right: 2px solid #111;
+}
+.news .normal .image {
+  background: url(../img/image1.png);
+  background-position: center center;
+  padding-bottom: 56.25%;
+  background-repeat: repeat-x;
+  background-size: auto calc(100% + 1px);
+}
+.news .news-title-text {
+  position: relative;
+  overflow: hidden;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+.news .news-title {
+  margin-top: 1rem;
+}
+.news .big .news-title p:first-child {
+  font-size: 2.25rem;
+}
+.news .big .news-title-text .line {
+  position: absolute;
+  top: 50%;
+  right: -8px;
+  width: calc(100% - 40px);
+  border-bottom: 2px solid #111;
+}
+.news .big .additional {
+  margin-bottom: 1rem;
+}
+.news .normal .news-title > p {
+  font-size: 25px;
+}
+.news .posted-by {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+.news a:hover .news-title p:first-child {
+  text-decoration: underline;
+}

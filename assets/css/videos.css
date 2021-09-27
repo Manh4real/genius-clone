@@ -1,0 +1,141 @@
+.main .videos {
+  width: 100%;
+  padding: 4.5rem 60px;
+  background-color: #121212;
+}
+.main .videos * {
+  color: #fff;
+}
+.videos .content {
+  position: relative;
+  /* min-width: 1340px; */
+}
+.videos .title {
+  grid-column: 1/ -1;
+}
+.videos .content > .title .small-title {
+  color: #ffff64;
+}
+.videos .big {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns:
+    [grid-start] repeat(3, minmax(14px, 44px)) [center-start] repeat(
+      6,
+      minmax(14px, 44px)
+    )
+    [center-end] repeat(3, minmax(14px, 44px)) [grid-end];
+  gap: 40px 60px;
+  height: 480px;
+}
+.videos .big .video {
+  grid-column: span 9;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  position: relative;
+}
+.videos .big .title {
+  grid-column: span 3;
+}
+.videos .big .title a:first-child {
+  display: inline-block;
+  width: 100%;
+  padding: 1.5rem 0 2rem;
+  border-top: 2px solid #fff;
+  text-align: left;
+}
+.videos .big .title a:not(:first-child) {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  height: 100%;
+}
+.videos .big .title a svg {
+  height: 1.5rem;
+  fill: #fff;
+}
+.videos .big .title a:hover p:first-child {
+  text-decoration: underline;
+}
+.videos .big .title p:first-child {
+  font-size: 24px;
+}
+.videos .big .title p:nth-child(2) {
+  font-size: 1rem;
+  padding: 1rem 0;
+}
+.videos .big .title p:last-child {
+  font-size: 12px;
+}
+.videos .btn {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+.videos .more-btn {
+  border: 2.5px solid #fff;
+  color: #fff;
+  background: #111;
+  margin: 0;
+}
+.videos .more-btn:hover {
+  color: #111;
+  background: #fff;
+}
+.videos .article {
+  grid-column: span 3 / auto;
+}
+.videos .article .top {
+  display: block;
+  border-top: 0.15rem solid #fff;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  height: 2.5rem;
+}
+.videos .article .top svg {
+  fill: #fff;
+  font-size: 100%;
+  height: 100%;
+  max-width: 100%;
+  display: block;
+}
+.videos .article .main-content {
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+  padding-bottom: 2rem;
+}
+.videos .article a:hover h3 {
+  text-decoration: underline;
+}
+.videos .article .image {
+  min-width: 162px;
+  width: 252px;
+  min-height: 141px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.videos .article h3 {
+  text-transform: capitalize;
+  line-height: 1;
+  margin: 1rem 0;
+  text-align: left;
+}
+.videos .article p {
+  text-align: left;
+  font-size: 12px;
+}
+.videos .date {
+  color: #9a9a9a;
+}
+.videos .big .video .play-icon {
+  content: "";
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}

@@ -1,0 +1,157 @@
+.main {
+  --pri-color: #ffff64;
+}
+.main .hdrimgcvr-ttl {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.main .hdrimgcvr-ttl::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.main header {
+  /* height: 300px; */
+  color: #fff;
+}
+.main header .num {
+  color: #9a9a9a;
+  font-weight: bold;
+  position: relative;
+}
+.main header .btn-w-lightnin {
+  position: absolute;
+  top: 1.25rem;
+  left: -2rem;
+  transform: translateX(-100%);
+  font-weight: bold;
+}
+.main header .btn-w-lightnin .num {
+  color: #99a7ee;
+  font-size: 0.75em;
+}
+.main header .btn-w-lightnin svg {
+  height: 1.8rem;
+  fill: #99a7ee;
+}
+.main header .sttcs .inline {
+  display: inline;
+  font-size: 0.75rem;
+  color: #9a9a9a;
+  margin-right: 0.75em;
+  cursor: default;
+}
+.main header .sttcs .cntbtrs {
+  /* pointer-events: auto; */
+  cursor: pointer;
+}
+.main header .sttcs .cntbtrs .num::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-bottom: 2px solid #9a9a9a;
+  bottom: -2px;
+  left: 0;
+}
+.main header .sttcs .inline svg {
+  height: 0.875em;
+  fill: #9a9a9a;
+}
+.main header .content {
+  justify-content: start;
+  align-items: flex-end;
+  /* width: 58%; */
+  padding: 2.25rem 0 1.5rem 0;
+  background: #0009;
+}
+.main .blw-img-sngnme-artsts {
+  display: flex;
+  padding: 0 1rem;
+  width: 58%;
+  box-sizing: initial;
+  position: relative;
+}
+.main .rt-txts-ps-imgs {
+  padding-right: 1rem;
+}
+.main .blw-img-sngnme-artsts > .image {
+  min-width: 220px;
+  min-height: 220px;
+  width: 220px;
+  height: 200px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  outline: 0.15rem solid #9a9a9a;
+  margin-right: 1rem;
+  margin-left: -2.25rem;
+}
+.main .rt-txts-ps-imgs .song-name {
+  color: var(--pri-color);
+  font-size: 2.25em;
+}
+.main .rt-txts-ps-imgs .artist {
+  display: inline-block;
+  font-size: 1.38em;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+}
+.main .rt-txts-ps-imgs .prdcrs {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #9a9a9a;
+}
+.main .rt-txts-ps-imgs .prdcrs > a {
+  color: #99a7ee;
+  display: inline-block;
+}
+.main .alb-name .text {
+  color: #9a9a9a;
+  font-weight: bold;
+}
+.main .alb-name .text .name {
+  color: #99a7ee;
+}
+.main .vrfd-cmtry {
+  margin-top: 1rem;
+}
+.main .vrfd-cmtry > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main .vrfd-cmtry .idvtl {
+  min-height: 32px;
+  margin-right: 1rem;
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  align-items: center;
+}
+.main .vrfd-cmtry .name {
+  font-weight: bold;
+  letter-spacing: 0.25px;
+  font-size: 14px;
+  color: #fff;
+}
+.main .vrfd-cmtry > h3 {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  color: #9a9a9a;
+  padding: 5px 0;
+}
+.main .vrfd-cmtry .image {
+  margin-right: 10px;
+}
+.main .vrfd-cmtry .drpbl-inl-bl:first-child .idvtl .image {
+  width: 32px;
+  height: 32px;
+}
