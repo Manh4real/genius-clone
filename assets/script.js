@@ -6,7 +6,7 @@ const chartSongs = document.querySelector(".chart .main .list");
 export const SONGS = [
   {
     id: "S001",
-    image_url: "./img/image1.png",
+    image_url: "/assets/img/image1.png",
     songName: "Way Too Sexy",
     artistName: "Drake",
     basicInfo: {
@@ -16,7 +16,7 @@ export const SONGS = [
   },
   {
     id: "S001",
-    image_url: "./img/image1.png",
+    image_url: "/assets/img/image1.png",
     songName: "Girls Want Girls",
     artistName: "Drake ft. Lil Baby",
     basicInfo: {
@@ -26,7 +26,7 @@ export const SONGS = [
   },
   {
     id: "S001",
-    image_url: "./img/image1.png",
+    image_url: "/assets/img/image1.png",
     songName: "Fair Trade",
     artistName: "Drake ft. Travis Scott",
     basicInfo: {
@@ -36,7 +36,7 @@ export const SONGS = [
   },
   {
     id: "S001",
-    image_url: "./img/image1.png",
+    image_url: "/assets/img/image1.png",
     songName: "Champagne Poetry",
     artistName: "Drake",
     basicInfo: {
@@ -46,7 +46,7 @@ export const SONGS = [
   },
   {
     id: "S001",
-    image_url: "./img/image1.png",
+    image_url: "/assets/img/image1.png",
     songName: "Knife Talk",
     artistName: "Drake ft 21 Savage & Project Pat",
     basicInfo: {
@@ -56,7 +56,7 @@ export const SONGS = [
   },
   {
     id: "S001",
-    image_url: "./img/image1.png",
+    image_url: "/assets/img/image1.png",
     songName: "Stay",
     artistName: "The Kid LAROI & Justin Bieber",
     basicInfo: {
@@ -66,7 +66,7 @@ export const SONGS = [
   },
   {
     id: "S001",
-    image_url: "./img/image1.png",
+    image_url: "/assets/img/image1.png",
     songName: "In The Bible",
     artistName: "Drake ft. Lil Durk & Giveon",
     basicInfo: {
@@ -76,7 +76,7 @@ export const SONGS = [
   },
   {
     id: "S001",
-    image_url: "./img/image1.png",
+    image_url: "/assets/img/image1.png",
     songName: "Papi's Home",
     artistName: "Drake",
     basicInfo: {
@@ -86,7 +86,7 @@ export const SONGS = [
   },
   {
     id: "S001",
-    image_url: "./img/image1.png",
+    image_url: "/assets/img/image1.png",
     songName: "TSU",
     artistName: "Drake",
     basicInfo: {
@@ -96,7 +96,7 @@ export const SONGS = [
   },
   {
     id: "S001",
-    image_url: "./img/image1.png",
+    image_url: "/assets/img/image1.png",
     songName: "Love All",
     artistName: "Drake ft. JAY-Z",
     basicInfo: {
@@ -165,6 +165,6 @@ function renderChart(songs) {
 function addLinks() {
   const links = document.querySelectorAll(".chart .list li > a");
   links.forEach((link) => {
-    link.href = "./lyrics/song-lyrics.html";
+    link.href = "/assets/lyrics/song-lyrics.html";
   });
 }
