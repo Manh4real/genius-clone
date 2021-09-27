@@ -4,7 +4,7 @@ const LATEST_NEWS = [
   {
     id: "LN001",
     title: "FEATURE",
-    image: "/assets/img/image2.jpg",
+    image: "assets/img/image2.jpg",
     para: `Interview: Sully Talks About Producing Doja Cat’s “Get Into It
         (Yuh)” and “I Don’t Do Drugs”`,
     posted: {
